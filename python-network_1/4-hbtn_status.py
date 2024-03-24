@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-"""
-Python script that fetches an URL with requests package
-"""
+"""Python script that fetches data"""
 import requests
 
-
 if __name__ == "__main__":
-    r = requests.get('https://intranet.hbtn.io/status')
-    t = r.text
-    print('Body response:\n\t- type: {}\n\t- content: {}'.format(type(t), t))
+    res = requests.get("https://intranet.hbtn.io/status")
+    print("Body response:")
+    print("\t- type: {}".format(type(res.text)))
+    print("\t- content: {}".format(res.text))
