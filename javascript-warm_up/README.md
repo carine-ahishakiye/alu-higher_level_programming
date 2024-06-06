@@ -1,1 +1,1 @@
-This directory contains basicJavaScript code
+ javascript-warm_up
